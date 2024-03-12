@@ -1,0 +1,5 @@
+<meta charset="utf-8">
+<title>[[*seotitle:default=`[[*pagetitle]]`]] - [[++site_name]]</title>
+<meta name="description" content="[[*introtext:default=`[[*pagetitle]]. Официальный дилер. Гарантия.`]]">
+<base href="[[!siteurl]]" />
+<link rel="canonical" href="[[!siteurl]][[*url]]"/>
