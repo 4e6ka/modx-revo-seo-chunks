@@ -1,11 +1,34 @@
-<meta charset="utf-8">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+
 
 <title>[[*seotitle:default=`[[*pagetitle]]`]] - [[++site_name]]</title>
 <meta name="description" content="[[*introtext:default=`[[*pagetitle]]. Официальный дилер. Гарантия.`]]">
+<meta name="keywords" content="ключевое слово 1, ключевое слово 2, ключевое слово 3">
+<meta name="author" content="Название компании">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="[[++base_url]]">
+<link rel="stylesheet" href="styles.css">
 
-<!-- favicons -->
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<meta property="og:title" content=[[*pagetitle]]">
+<meta property="og:description" content="[[*description]]">
+<meta property="og:image" content="[[*uri]]/[[*image]]">
+<meta property="og:url" content="[[++base_url]]">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU" />
+<meta property="og:site_name" content="[[++site_name]]" />
+
+<meta name="twitter:card" content="[[*uri]]/[[*image]]">
+<meta name="twitter:title" content="[[++site_map]]">
+<meta name="twitter:description" content="[[*introtext]]">
+<meta name="twitter:image" content="[[*uri]]/[[*image]]">
+
+<meta name="yandex-verification" content="8888888888"/>
+
+
+<link rel="icon" type="image/png" href="/assets/images/paiaks_favicon.svg" />
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" type="image/png" href="assets/app-icons/icon-32x32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/app-icons/icon-180x180.png">
@@ -13,4 +36,62 @@
 <base href="[[!siteurl]]" />
 <link rel="canonical" href="[[!siteurl]][[*url]]"/>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="//api-maps.yandex.ru">
+<link rel="dns-prefetch" href="//api-maps.yandex.ru">	
 
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "LocalBusiness",
+  "name": "[[++site_name]]",
+  "telephone": ": [[++phone]]",
+  "email": "",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "[[++address]]",
+    "addressCountry": "Россия",
+    "postalCode": "100200,"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "http://schema.org/Monday",
+        "http://schema.org/Tuesday",
+        "http://schema.org/Wednesday",
+        "http://schema.org/Thursday",
+        "http://schema.org/Friday"
+      ],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "http://schema.org/Saturday",
+        "http://schema.org/Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "00:00",
+      "closed": true
+    }
+  ]
+}
+</script> 
+
+</head>
+<body>
+
+
+<script>
+console.group("Время загрузки (формирования) страницы");
+console.log("[^qt^] — Время потраченное на запросы к базе данных");
+console.log("[^q^] — Количество запросов к базе данных");
+console.log("[^p^] — Время потраченное на работу PHP скриптов");
+console.log("[^t^] — Общее время потраченное на генерацию страницы");
+console.log("[^s^] — Источник содержимого (база данных или кэш)");
+console.groupEnd();
+</script>
+</body>
