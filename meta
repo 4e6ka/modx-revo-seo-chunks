@@ -1,5 +1,16 @@
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+
 <title>[[*seotitle:default=`[[*pagetitle]]`]] - [[++site_name]]</title>
 <meta name="description" content="[[*introtext:default=`[[*pagetitle]]. Официальный дилер. Гарантия.`]]">
+
+<!-- favicons -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" type="image/png" href="assets/app-icons/icon-32x32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/app-icons/icon-180x180.png">
+
 <base href="[[!siteurl]]" />
 <link rel="canonical" href="[[!siteurl]][[*url]]"/>
+
+
